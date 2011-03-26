@@ -1,0 +1,20 @@
+﻿using System.Web.Mvc;
+
+namespace SHHH.Infrastructure.NHibernate.Mvc
+{
+    public class NHibernateSessionAttribute : ActionFilterAttribute
+    {
+        public NHibernateSessionAttribute()
+        {
+            Order = 100;
+        }
+
+
+        public override void OnResultExecuted(ResultExecutedContext filterContext)
+        {
+            if (filterContext.IsChildAction) return;
+
+             SessionSource.EndContextSession();
+        }
+    }
+}
