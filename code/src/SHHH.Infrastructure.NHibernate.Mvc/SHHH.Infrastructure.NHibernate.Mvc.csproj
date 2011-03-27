@@ -52,10 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SHHH.Infrastructure.NHibernate.Mvc.Resources\SHHH.Infrastructure.NHibernate.Mvc.Resources.csproj">
-      <Project>{896F66BD-0A30-4A7D-B00B-F97EABC1D80F}</Project>
-      <Name>SHHH.Infrastructure.NHibernate.Mvc.Resources</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SHHH.Infrastructure.NHibernate\SHHH.Infrastructure.NHibernate.csproj">
       <Project>{9F258F2C-282D-4E99-9241-3ED0405E1D54}</Project>
       <Name>SHHH.Infrastructure.NHibernate</Name>
