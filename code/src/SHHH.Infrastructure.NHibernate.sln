@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.NHibern
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.NHibernate.Mvc", "SHHH.Infrastructure.NHibernate.Mvc\SHHH.Infrastructure.NHibernate.Mvc.csproj", "{8C0C1BA6-324C-48C6-8538-3AD50BA8EA01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure", "SHHH.Infrastructure\SHHH.Infrastructure.csproj", "{A05C0F83-3C4F-4DA3-98BB-92F2B1512399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{8C0C1BA6-324C-48C6-8538-3AD50BA8EA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C0C1BA6-324C-48C6-8538-3AD50BA8EA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C0C1BA6-324C-48C6-8538-3AD50BA8EA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A05C0F83-3C4F-4DA3-98BB-92F2B1512399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05C0F83-3C4F-4DA3-98BB-92F2B1512399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05C0F83-3C4F-4DA3-98BB-92F2B1512399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05C0F83-3C4F-4DA3-98BB-92F2B1512399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -37,10 +37,11 @@ namespace SHHH.Infrastructure.NHibernate
                     foreach (IMappingSource source in sources)
                         foreach (Assembly assembly in source.MappingSources())
                         {
-                            _log.Info(x => x("Adding Mappings from assembly: {0}", assembly.FullName)); 
+                            _log.Info(x => x("Adding Mappings from assembly: {0}", assembly.FullName));
                             m.FluentMappings.AddFromAssembly(assembly);
                         }
                 })
+                .ExposeConfiguration(xConf => xConf.SetListener(global::NHibernate.Event.ListenerType.Delete, new DeleteEventListener()))
                 .BuildSessionFactory();
             }
         }
