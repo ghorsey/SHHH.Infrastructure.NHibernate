@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
+using Common.Logging;
 using FluentNHibernate.Cfg;
+using Microsoft.Practices.ServiceLocation;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Context;
-using System.Collections.Generic;
-using Microsoft.Practices.ServiceLocation;
-using System.Reflection;
-using Common.Logging;
 
 namespace SHHH.Infrastructure.NHibernate
 {

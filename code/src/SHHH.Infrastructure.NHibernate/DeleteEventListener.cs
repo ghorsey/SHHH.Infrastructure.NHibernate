@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NHibernate;
-using NHibernate.Event.Default;
+﻿using NHibernate.Event.Default;
 
 namespace SHHH.Infrastructure.NHibernate
 {
