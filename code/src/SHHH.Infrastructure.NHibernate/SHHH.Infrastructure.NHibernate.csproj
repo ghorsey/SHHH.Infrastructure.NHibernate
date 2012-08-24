@@ -50,9 +50,6 @@
     <Reference Include="Iesi.Collections">
       <HintPath>..\..\lib\NHibernate\v3.0.0.GA\Required_Bins\Iesi.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.ServiceLocation">
-      <HintPath>..\..\lib\CommonServiceLocator\v1.0\Microsoft.Practices.ServiceLocation.dll</HintPath>
-    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate\v3.0.0.GA\Required_Bins\NHibernate.dll</HintPath>
     </Reference>

@@ -4,7 +4,6 @@ using System.IO;
 using System.Reflection;
 using Common.Logging;
 using FluentNHibernate.Cfg;
-using Microsoft.Practices.ServiceLocation;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Context;
@@ -20,7 +19,7 @@ namespace SHHH.Infrastructure.NHibernate
             return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configFile);
         }
         static object lck = new object();
-        private static void BuildSessionFactory()
+        public static void BuildSessionFactory(IEnumerable<IMappingSource> sources)
         {
             if (_factory != null) return;
 
@@ -28,7 +27,6 @@ namespace SHHH.Infrastructure.NHibernate
             Configuration cfg = new Configuration();
             cfg.Configure(CreateConfigurationFile());
             
-            IEnumerable<IMappingSource> sources = ServiceLocator.Current.GetAllInstances<IMappingSource>();
             lock (lck)
             {
                 _factory = Fluently.Configure(cfg).Mappings(m =>
@@ -47,16 +45,7 @@ namespace SHHH.Infrastructure.NHibernate
 
         private static ISessionFactory _factory;
 
-        private static ISessionFactory Factory
-        {
-            get
-            {
-                if (_factory == null)
-                    BuildSessionFactory();
-                return _factory;
-            }
-        
-        }
+        private static ISessionFactory Factory{get; set; }
 
         public static ISession GetSession()
         {
