@@ -12,31 +12,30 @@ namespace SHHH.Infrastructure.NHibernate
 {
     public static class SessionSource
     {
-        readonly static ILog _log = LogManager.GetCurrentClassLogger();
+        readonly static ILog Log = LogManager.GetCurrentClassLogger();
         static string CreateConfigurationFile()
         {
             string configFile = typeof(SessionSource).Assembly.GetName().Name + ".cfg.xml";
             return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configFile);
         }
         static object lck = new object();
-        public static void BuildSessionFactory(IEnumerable<IMappingSource> sources)
+        public static void BuildSessionFactory(IEnumerable<Assembly> sources, string configurationFile = null)
         {
             if (_factory != null) return;
 
-            _log.Info("Building SessionFactory");
-            Configuration cfg = new Configuration();
-            cfg.Configure(CreateConfigurationFile());
+            Log.Info("Building SessionFactory");
+            var cfg = new Configuration();
+            cfg.Configure(configurationFile ?? CreateConfigurationFile());
             
             lock (lck)
             {
                 _factory = Fluently.Configure(cfg).Mappings(m =>
                 {
-                    foreach (IMappingSource source in sources)
-                        foreach (Assembly assembly in source.MappingSources())
-                        {
-                            _log.Info(x => x("Adding Mappings from assembly: {0}", assembly.FullName));
-                            m.FluentMappings.AddFromAssembly(assembly);
-                        }
+                    foreach (var assembly in sources)
+                    {
+                        Log.Info(x => x("Adding Mappings from assembly: {0}", assembly.FullName));
+                        m.FluentMappings.AddFromAssembly(assembly);
+                    }
                 })
                 .ExposeConfiguration(xConf => xConf.SetListener(global::NHibernate.Event.ListenerType.Delete, new DeleteEventListener()))
                 .BuildSessionFactory();

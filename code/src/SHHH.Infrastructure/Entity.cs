@@ -11,7 +11,7 @@ namespace SHHH.Infrastructure
             Id = default(TId);
         }
 
-        private static bool IsTransient( Entity<TId> entity)
+        private static bool IsTransient(Entity<TId> entity)
         {
             return (entity != null && Equals(entity.Id, default(TId)));
         }
