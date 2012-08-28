@@ -11,7 +11,10 @@ namespace SHHH.Infrastructure.NHibernate
             using (var trans = session.BeginTransaction())
             {
                 f(session);
-                trans.Commit();
+                if (trans.IsActive)
+                    trans.Commit();
+
+                session.Flush();
             }
         }
 

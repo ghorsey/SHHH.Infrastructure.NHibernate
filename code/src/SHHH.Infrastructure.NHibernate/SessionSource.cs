@@ -48,15 +48,16 @@ namespace SHHH.Infrastructure.NHibernate
 
         public static ISession GetSession()
         {
-            ISession session;
-            if (CurrentSessionContext.HasBind(Factory))
-                session = Factory.GetCurrentSession();
-            else
-            {
-                session = Factory.OpenSession();
-                CurrentSessionContext.Bind(session);
-            }
-            return session;
+            if (Factory == null) throw new InvalidOperationException("NHibernate SessionFactory cannot be null");
+            //ISession session;
+            //if (CurrentSessionContext.HasBind(Factory))
+            //    session = Factory.GetCurrentSession();
+            //else
+            //{
+            //    session = Factory.OpenSession();
+            //    CurrentSessionContext.Bind(session);
+            //}
+            return Factory.OpenSession();
         }
 
         public static void EndContextSession()

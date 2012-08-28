@@ -62,14 +62,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="SHHH.Infrastructure.NHibernate.snk" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SHHH.Infrastructure.NHibernate\SHHH.Infrastructure.NHibernate.csproj">
       <Project>{9F258F2C-282D-4E99-9241-3ED0405E1D54}</Project>
       <Name>SHHH.Infrastructure.NHibernate</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="SHHH.Infrastructure.NHibernate.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
