@@ -22,7 +22,7 @@ namespace SHHH.Infrastructure.NHibernate
         static object lck = new object();
         public static void BuildSessionFactory(IEnumerable<Assembly> sources, string configurationFile = null)
         {
-            if (_factory != null) return;
+            if (Factory != null) return;
 
             Log.Info("Building SessionFactory");
             
@@ -31,7 +31,7 @@ namespace SHHH.Infrastructure.NHibernate
                 Configuration = new Configuration();
                 Configuration.Configure(configurationFile ?? CreateConfigurationFile());
 
-                _factory = Fluently.Configure(Configuration).Mappings(m =>
+                Factory = Fluently.Configure(Configuration).Mappings(m =>
                 {
                     foreach (var assembly in sources)
                     {
@@ -44,9 +44,7 @@ namespace SHHH.Infrastructure.NHibernate
             }
         }
 
-        private static ISessionFactory _factory;
-
-        private static ISessionFactory Factory{get; set; }
+        private static ISessionFactory Factory { get; set; }
 
         public static ISession GetSession()
         {
