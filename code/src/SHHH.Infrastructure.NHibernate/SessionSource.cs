@@ -13,6 +13,7 @@ namespace SHHH.Infrastructure.NHibernate
     public static class SessionSource
     {
         readonly static ILog Log = LogManager.GetCurrentClassLogger();
+        public static Configuration Configuration { get; private set; }
         static string CreateConfigurationFile()
         {
             string configFile = typeof(SessionSource).Assembly.GetName().Name + ".cfg.xml";
@@ -24,12 +25,13 @@ namespace SHHH.Infrastructure.NHibernate
             if (_factory != null) return;
 
             Log.Info("Building SessionFactory");
-            var cfg = new Configuration();
-            cfg.Configure(configurationFile ?? CreateConfigurationFile());
             
             lock (lck)
             {
-                _factory = Fluently.Configure(cfg).Mappings(m =>
+                Configuration = new Configuration();
+                Configuration.Configure(configurationFile ?? CreateConfigurationFile());
+
+                _factory = Fluently.Configure(Configuration).Mappings(m =>
                 {
                     foreach (var assembly in sources)
                     {
