@@ -6,7 +6,6 @@ using Common.Logging;
 using FluentNHibernate.Cfg;
 using NHibernate;
 using NHibernate.Cfg;
-using NHibernate.Context;
 
 namespace SHHH.Infrastructure.NHibernate
 {
@@ -49,36 +48,28 @@ namespace SHHH.Infrastructure.NHibernate
         public static ISession GetSession()
         {
             if (Factory == null) throw new InvalidOperationException("NHibernate SessionFactory cannot be null");
-            //ISession session;
-            //if (CurrentSessionContext.HasBind(Factory))
-            //    session = Factory.GetCurrentSession();
-            //else
-            //{
-            //    session = Factory.OpenSession();
-            //    CurrentSessionContext.Bind(session);
-            //}
             return Factory.OpenSession();
         }
 
         public static void EndContextSession()
         {
-            var session = CurrentSessionContext.Unbind(Factory);
-            if (session != null && session.IsOpen)
-            {
-                try
-                {
-                    if (session.Transaction != null && session.Transaction.IsActive)
-                    {
-                        // an unhandled exception has occurred and no db commit should be made
-                        session.Transaction.Rollback();
-                    }
-                }
-                finally
-                {
-                    session.Close();
-                    session.Dispose();
-                }
-            }
+            //var session = CurrentSessionContext.Unbind(Factory);
+            //if (session != null && session.IsOpen)
+            //{
+            //    try
+            //    {
+            //        if (session.Transaction != null && session.Transaction.IsActive)
+            //        {
+            //            // an unhandled exception has occurred and no db commit should be made
+            //            session.Transaction.Rollback();
+            //        }
+            //    }
+            //    finally
+            //    {
+            //        session.Close();
+            //        session.Dispose();
+            //    }
+            //}
         }
     }
 }
