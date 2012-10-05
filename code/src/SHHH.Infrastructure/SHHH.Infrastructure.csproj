@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collector.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="ILogicalDelete.cs" />
     <Compile Include="None.cs" />
