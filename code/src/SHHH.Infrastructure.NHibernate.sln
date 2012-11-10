@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.NHibernate", "SHHH.Infrastructure.NHibernate\SHHH.Infrastructure.NHibernate.csproj", "{9F258F2C-282D-4E99-9241-3ED0405E1D54}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHHH.Infrastructure.NHibernate.Mvc", "SHHH.Infrastructure.NHibernate.Mvc\SHHH.Infrastructure.NHibernate.Mvc.csproj", "{8C0C1BA6-324C-48C6-8538-3AD50BA8EA01}"
