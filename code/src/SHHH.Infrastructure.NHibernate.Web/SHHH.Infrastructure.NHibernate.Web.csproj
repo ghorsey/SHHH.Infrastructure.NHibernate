@@ -8,8 +8,8 @@
     <ProjectGuid>{8C0C1BA6-324C-48C6-8538-3AD50BA8EA01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SHHH.Infrastructure.NHibernate.Mvc</RootNamespace>
-    <AssemblyName>SHHH.Infrastructure.NHibernate.Mvc</AssemblyName>
+    <RootNamespace>SHHH.Infrastructure.NHibernate.Web</RootNamespace>
+    <AssemblyName>SHHH.Infrastructure.NHibernate.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -39,7 +39,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>SHHH.Infrastructure.NHibernate.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\SHHH.Infrastructure.NHibernate.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
@@ -65,8 +65,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\SHHH.Infrastructure.NHibernate.snk">
+      <Link>SHHH.Infrastructure.NHibernate.snk</Link>
+    </None>
     <None Include="packages.config" />
-    <None Include="SHHH.Infrastructure.NHibernate.snk" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SHHH.Infrastructure.NHibernate\SHHH.Infrastructure.NHibernate.csproj">
