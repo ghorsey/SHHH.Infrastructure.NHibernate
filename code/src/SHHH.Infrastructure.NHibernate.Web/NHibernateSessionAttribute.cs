@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace SHHH.Infrastructure.NHibernate.Mvc
+namespace SHHH.Infrastructure.NHibernate.Web
 {
     public class NHibernateSessionAttribute : ActionFilterAttribute
     {

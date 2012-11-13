@@ -5,7 +5,7 @@ using NHibernate;
 using NHibernate.Context;
 using NHibernate.Engine;
 
-namespace SHHH.Infrastructure.NHibernate.Mvc
+namespace SHHH.Infrastructure.NHibernate.Web
 {
     [Serializable]
     public class HybridWebSessionContext : MapBasedSessionContext
