@@ -1,9 +1,8 @@
 '''
-Created on Sep 21, 2011
+Created on Nov 2, 2012
 
 @author: Geoff
 '''
-import clean
 import tempfile
 import shutil
 import os
@@ -37,7 +36,7 @@ def bumpVersion(args):
             version.append(args[idx])
         else:
             version.append(0)
-    
+
     #Creating a closure that is returned to remove globals
     def updateFile(filePath):
         major, minor, build, revision = version
@@ -45,16 +44,35 @@ def bumpVersion(args):
         
     return updateFile 
 
+def validateVersion(version):
+    if(len(version) == 0 or len(version) > 4):
+        raise "invalid version must be at least one number"
+    
+    for itm in version:
+        if(not itm.isdigit() and itm != "*"):
+            err = itm + " is not a valid version segment"
+            raise Exception(err)
+
+    
+
 if __name__ == '__main__':
     import sys
+    import walklevel
+    import fnmatch
 
-    version = [1, 0, 0, 0]
+    version = ["1", "0", "0", "0"]
         
     if len(sys.argv) > 1:
-        version = sys.argv[1].split('.')
-        clean.recurseDir(os.getcwd(), 'AssemblyInfo.cs', bumpVersion(version))
+        arg = sys.argv[1].split('.')
+        
+        for i in range(0,4):
+            if(len(arg) > i):
+                version[i] = arg[i]
+
+        validateVersion(version)
+        for root, dirNames, filenames in walklevel.walklevel(".\\", level = 2):
+            for filename in fnmatch.filter(filenames, "AssemblyInfo.cs"):
+                bumpVersion(version)(os.path.join(root,filename))
     else:
         print('Usage: bump.py major[.minor[.revision[.build]]]')
         
-
-    

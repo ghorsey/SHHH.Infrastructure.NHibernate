@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace SHHH.Infrastructure
 {
+    [DataContract]
     public class Entity<TId>
     {
+        [DataMember]
         public virtual TId Id { get; protected set; }
 
         public Entity()
