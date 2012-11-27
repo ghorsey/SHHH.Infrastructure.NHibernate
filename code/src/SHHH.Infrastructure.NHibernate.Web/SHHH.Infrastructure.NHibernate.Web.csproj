@@ -75,6 +75,10 @@
       <Project>{9F258F2C-282D-4E99-9241-3ED0405E1D54}</Project>
       <Name>SHHH.Infrastructure.NHibernate</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SHHH.Infrastructure\SHHH.Infrastructure.csproj">
+      <Project>{a05c0f83-3c4f-4da3-98bb-92f2b1512399}</Project>
+      <Name>SHHH.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
