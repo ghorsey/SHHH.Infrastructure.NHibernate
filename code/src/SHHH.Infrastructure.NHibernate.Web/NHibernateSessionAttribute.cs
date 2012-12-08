@@ -7,7 +7,7 @@ namespace SHHH.Infrastructure.NHibernate.Web
     using System.Web.Mvc;
 
     /// <summary>
-    /// An <see cref="ActionFilterAttribute"/> that closes any open NHibernate <see cref="NHibernate.ISession"/>
+    /// An <see cref="ActionFilterAttribute"/> that closes any open NHibernate session
     /// </summary>
     public class NHibernateSessionAttribute : ActionFilterAttribute
     {

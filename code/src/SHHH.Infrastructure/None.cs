@@ -18,13 +18,5 @@ namespace SHHH.Infrastructure
         {
             this.IsDefined = false;
         }
-
-        /// <summary>
-        /// Gets or sets a value indicating whether this instance is defined.
-        /// </summary>
-        /// <value>
-        /// <c>true</c> if this instance is defined; otherwise, <c>false</c>.
-        /// </value>
-        public bool IsDefined { get; set; }
     }
 }

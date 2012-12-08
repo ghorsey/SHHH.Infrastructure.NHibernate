@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SHHH.Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="T:SHHH.Infrastructure.Collector`1">
+            <summary>
+            Used to track pagination of data
+            </summary>
+            <typeparam name="T">A class</typeparam>
+        </member>
+        <member name="M:SHHH.Infrastructure.Collector`1.#ctor(System.Collections.Generic.List{`0},System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.Collector`1"/> class.
+            </summary>
+            <param name="items">The items.</param>
+            <param name="totalPages">The total pages.</param>
+            <param name="currentPage">The current page.</param>
+        </member>
+        <member name="P:SHHH.Infrastructure.Collector`1.Items">
+            <summary>
+            Gets the items.
+            </summary>
+            <value>
+            The items.
+            </value>
+        </member>
+        <member name="P:SHHH.Infrastructure.Collector`1.TotalPages">
+            <summary>
+            Gets the total pages.
+            </summary>
+            <value>
+            The total pages.
+            </value>
+        </member>
+        <member name="P:SHHH.Infrastructure.Collector`1.CurrentPage">
+            <summary>
+            Gets the current page.
+            </summary>
+            <value>
+            The current page.
+            </value>
+        </member>
+        <member name="T:SHHH.Infrastructure.Entity`1">
+            <summary>
+            Represents a class that is persisted.
+            </summary>
+            <typeparam name="TId">The type of the id.</typeparam>
+        </member>
+        <member name="M:SHHH.Infrastructure.Entity`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.Entity`1"/> class.
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.Entity`1.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object"/> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:SHHH.Infrastructure.Entity`1.Equals(SHHH.Infrastructure.Entity{`0})">
+            <summary>
+            Equals the specified object.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>true of the specified object equals this object; otherwise false</returns>
+        </member>
+        <member name="M:SHHH.Infrastructure.Entity`1.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+            </returns>
+        </member>
+        <member name="M:SHHH.Infrastructure.Entity`1.IsTransient(SHHH.Infrastructure.Entity{`0})">
+            <summary>
+            Determines whether the specified entity is transient.
+            </summary>
+            <param name="entity">The entity.</param>
+            <returns>
+              <c>true</c> if the specified entity is transient; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:SHHH.Infrastructure.Entity`1.GetUnproxiedType">
+            <summary>
+            Gets the type of the base class (non-proxy class).
+            </summary>
+            <returns><see cref="T:System.Type"/></returns>
+        </member>
+        <member name="P:SHHH.Infrastructure.Entity`1.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+            <value>
+            The id.
+            </value>
+        </member>
+        <member name="T:SHHH.Infrastructure.ILogicalDelete">
+            <summary>
+            An interface used by the NHibernate library to logically delete an object
+            </summary>
+        </member>
+        <member name="P:SHHH.Infrastructure.ILogicalDelete.IsDeleted">
+            <summary>
+            Gets or sets a value indicating whether this instance is deleted.
+            </summary>
+            <value>
+            <c>true</c> if this instance is deleted; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:SHHH.Infrastructure.None`1">
+            <summary>
+            Represents an <see cref="T:SHHH.Infrastructure.Option`1"/> where the object is not defined
+            </summary>
+            <typeparam name="T">Of a class</typeparam>
+        </member>
+        <member name="T:SHHH.Infrastructure.Option`1">
+            <summary>
+            The option class
+            </summary>
+            <typeparam name="T">Of a Class</typeparam>
+        </member>
+        <member name="M:SHHH.Infrastructure.Option`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.Option`1"/> class.
+            </summary>
+            <param name="obj">The object.</param>
+        </member>
+        <member name="M:SHHH.Infrastructure.Option`1.MakeOption(`0)">
+            <summary>
+            Makes the option.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns><see cref="T:SHHH.Infrastructure.Option`1"/></returns>
+        </member>
+        <member name="M:SHHH.Infrastructure.Option`1.op_Implicit(`0)~SHHH.Infrastructure.Option{`0}">
+            <summary>
+            Options the specified object.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns><see cref="T:SHHH.Infrastructure.Some`1"/></returns>
+        </member>
+        <member name="P:SHHH.Infrastructure.Option`1.Object">
+            <summary>
+            Gets the object.
+            </summary>
+            <value>
+            The object.
+            </value>
+        </member>
+        <member name="P:SHHH.Infrastructure.Option`1.IsDefined">
+            <summary>
+            Gets or sets a value indicating whether this instance is defined.
+            </summary>
+            <value>
+            <c>true</c> if this instance is defined; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:SHHH.Infrastructure.None`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.None`1"/> class.
+            </summary>
+        </member>
+        <member name="T:SHHH.Infrastructure.Some`1">
+            <summary>
+            Represents an <see cref="T:SHHH.Infrastructure.Option`1"/> where the reference object is defined
+            </summary>
+            <typeparam name="T">Of a class</typeparam>
+        </member>
+        <member name="M:SHHH.Infrastructure.Some`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.Some`1"/> class.
+            </summary>
+            <param name="obj">The object.</param>
+        </member>
+    </members>
+</doc>

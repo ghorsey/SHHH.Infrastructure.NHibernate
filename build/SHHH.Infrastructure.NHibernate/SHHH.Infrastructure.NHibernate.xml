@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SHHH.Infrastructure.NHibernate</name>
+    </assembly>
+    <members>
+        <member name="T:SHHH.Infrastructure.NHibernate.DeleteEventListener">
+            <summary>
+            An NHibernate event listener for the Delete event
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.DeleteEventListener.DeleteEntity(NHibernate.Event.IEventSource,System.Object,NHibernate.Engine.EntityEntry,System.Boolean,NHibernate.Persister.Entity.IEntityPersister,Iesi.Collections.ISet)">
+            <summary>
+            Perform the entity deletion.  Well, as with most operations, does not
+            really perform it; just schedules an action/execution with the
+            <see cref="T:NHibernate.Engine.ActionQueue" /> for execution during flush.
+            </summary>
+            <param name="session">The originating session</param>
+            <param name="entity">The entity to delete</param>
+            <param name="entityEntry">The entity's entry in the <see cref="T:NHibernate.ISession" /></param>
+            <param name="isCascadeDeleteEnabled">Is delete cascading enabled?</param>
+            <param name="persister">The entity persister.</param>
+            <param name="transientEntities">A cache of already deleted entities.</param>
+        </member>
+        <member name="T:SHHH.Infrastructure.NHibernate.RepositoryBase">
+            <summary>
+            A base class for Repositories
+            </summary>
+        </member>
+        <member name="F:SHHH.Infrastructure.NHibernate.RepositoryBase.logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.RepositoryBase.RunInTransaction(System.Action{NHibernate.ISession},System.Data.IsolationLevel)">
+            <summary>
+            Runs the in transaction.
+            </summary>
+            <param name="f">The f.</param>
+            <param name="isolationLevel">The isolation level.</param>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.RepositoryBase.RunInTransaction``1(System.Func{NHibernate.ISession,``0},System.Data.IsolationLevel)">
+            <summary>
+            Runs the in transaction.
+            </summary>
+            <typeparam name="TOut">The type of the out.</typeparam>
+            <param name="f">The f.</param>
+            <param name="isolationLevel">The isolation level.</param>
+            <returns>The TOut</returns>
+        </member>
+        <member name="T:SHHH.Infrastructure.NHibernate.RepositoryEntityBase`2">
+            <summary>
+            The base class for Entity based repositories
+            </summary>
+            <typeparam name="T">The <see cref="T:SHHH.Infrastructure.Entity`1"/></typeparam>
+            <typeparam name="TId">The type of the id.</typeparam>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.RepositoryEntityBase`2.Load(`1,System.Data.IsolationLevel,NHibernate.LockMode)">
+            <summary>
+            Loads the specified id.
+            </summary>
+            <param name="id">The id.</param>
+            <param name="isolationLevel">The isolation level.</param>
+            <param name="lockMode">The lock mode.</param>
+            <returns>The <see cref="T:SHHH.Infrastructure.Entity`1"/></returns>
+        </member>
+        <member name="T:SHHH.Infrastructure.NHibernate.SessionSource">
+            <summary>
+            The NHibernate session source
+            </summary>
+        </member>
+        <member name="F:SHHH.Infrastructure.NHibernate.SessionSource.Log">
+            <summary>
+            The log
+            </summary>
+        </member>
+        <member name="F:SHHH.Infrastructure.NHibernate.SessionSource.lck">
+            <summary>
+            The object used to lock threads
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.SessionSource.BuildSessionFactory(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.String)">
+            <summary>
+            Builds the session factory.
+            </summary>
+            <param name="sources">The sources.</param>
+            <param name="configurationFile">The configuration file.</param>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.SessionSource.GetSession">
+            <summary>
+            Gets the session.
+            </summary>
+            <returns>An <c>NHibernate.ISession</c></returns>
+            <exception cref="T:System.InvalidOperationException">NHibernate SessionFactory cannot be null</exception>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.SessionSource.EndContextSession">
+            <summary>
+            Ends the context session.
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.SessionSource.CreateConfigurationFile">
+            <summary>
+            Creates the configuration file.
+            </summary>
+            <returns>The default path to the configuration file</returns>
+        </member>
+        <member name="P:SHHH.Infrastructure.NHibernate.SessionSource.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="P:SHHH.Infrastructure.NHibernate.SessionSource.Factory">
+            <summary>
+            Gets or sets the factory.
+            </summary>
+            <value>
+            The factory.
+            </value>
+        </member>
+    </members>
+</doc>

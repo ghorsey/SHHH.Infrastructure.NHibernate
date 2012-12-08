@@ -80,7 +80,7 @@ namespace SHHH.Infrastructure.NHibernate
         /// <summary>
         /// Gets the session.
         /// </summary>
-        /// <returns>An <see cref="NHibernate.ISession"/></returns>
+        /// <returns>An <c>NHibernate.ISession</c></returns>
         /// <exception cref="System.InvalidOperationException">NHibernate SessionFactory cannot be null</exception>
         public static ISession GetSession()
         {

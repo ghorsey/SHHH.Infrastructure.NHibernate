@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SHHH.Infrastructure.NHibernate.Web</name>
+    </assembly>
+    <members>
+        <member name="T:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext">
+            <summary>
+            A hybrid web session context that uses the standard web context and the thread static context
+            </summary>
+        </member>
+        <member name="F:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext.SessionFactoryMapKey">
+            <summary>
+            The session factory map key
+            </summary>
+        </member>
+        <member name="F:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext.session">
+            <summary>
+            The session
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext.#ctor(NHibernate.Engine.ISessionFactoryImplementor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext"/> class.
+            </summary>
+            <param name="factory">The factory.</param>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext.GetMap">
+            <summary>
+            Get the dictionary mapping session factory to its current session.
+            </summary>
+            <returns>A <see cref="T:System.Collections.IDictionary"/></returns>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext.SetMap(System.Collections.IDictionary)">
+            <summary>
+            Set the map mapping session factory to its current session.
+            </summary>
+            <param name="value">The <see cref="T:System.Collections.IDictionary"/></param>
+        </member>
+        <member name="P:SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext.Session">
+            <summary>
+            Gets or sets the currently bound session.
+            </summary>
+        </member>
+        <member name="T:SHHH.Infrastructure.NHibernate.Web.NHibernateSessionAttribute">
+            <summary>
+            An <see cref="T:System.Web.Mvc.ActionFilterAttribute"/> that closes any open NHibernate session
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.Web.NHibernateSessionAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SHHH.Infrastructure.NHibernate.Web.NHibernateSessionAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:SHHH.Infrastructure.NHibernate.Web.NHibernateSessionAttribute.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <summary>
+            Called by the ASP.NET MVC framework after the action result executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+    </members>
+</doc>
