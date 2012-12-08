@@ -1,11 +1,21 @@
-﻿using NUnit.Framework;
-using SHHH.Infrastructure;
+﻿// <copyright file="Option_TestFixture.cs" company="SHHH Innovations LLC">
+// Copyright SHHH Innovations LLC
+// </copyright>
 
 namespace SHHH.Infractructure.Tests
 {
+    using NUnit.Framework;
+    using SHHH.Infrastructure;
+
+    /// <summary>
+    /// The test fixture for <see cref="Option{T}"/> objects
+    /// </summary>
     [TestFixture]
     public class Option_TestFixture
     {
+        /// <summary>
+        /// Test using <c>MakeOption</c>
+        /// </summary>
         [Test]
         public void MakeOption_Test()
         {
@@ -23,6 +33,9 @@ namespace SHHH.Infractructure.Tests
             Assert.IsNull(none.Object);
         }
 
+        /// <summary>
+        /// Test the implicit class operation
+        /// </summary>
         [Test]
         public void ImplicitCast_Test()
         {

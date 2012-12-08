@@ -1,28 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
-using Common.Logging;
-using FluentNHibernate.Cfg;
-using NHibernate;
-using NHibernate.Cfg;
-using NHibernate.Context;
+﻿// <copyright file="SessionSource.cs" company="SHHH Innovations LLC">
+// Copyright SHHH Innovations LLC
+// </copyright>
 
 namespace SHHH.Infrastructure.NHibernate
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Reflection;
+    using Common.Logging;
+    using FluentNHibernate.Cfg;
+    using global::NHibernate;
+    using global::NHibernate.Cfg;
+    using global::NHibernate.Context;
+
+    /// <summary>
+    /// The NHibernate session source
+    /// </summary>
     public static class SessionSource
     {
-        readonly static ILog Log = LogManager.GetCurrentClassLogger();
+        /// <summary>
+        /// The log
+        /// </summary>
+        private static readonly ILog Log = LogManager.GetCurrentClassLogger();
+
+        /// <summary>
+        /// The object used to lock threads
+        /// </summary>
+        private static object lck = new object();
+
+        /// <summary>
+        /// Gets the configuration.
+        /// </summary>
+        /// <value>
+        /// The configuration.
+        /// </value>
         public static Configuration Configuration { get; private set; }
-        static string CreateConfigurationFile()
-        {
-            string configFile = typeof(SessionSource).Assembly.GetName().Name + ".cfg.xml";
-            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configFile);
-        }
-        static object lck = new object();
+
+        /// <summary>
+        /// Gets or sets the factory.
+        /// </summary>
+        /// <value>
+        /// The factory.
+        /// </value>
+        private static ISessionFactory Factory { get; set; }
+
+        /// <summary>
+        /// Builds the session factory.
+        /// </summary>
+        /// <param name="sources">The sources.</param>
+        /// <param name="configurationFile">The configuration file.</param>
         public static void BuildSessionFactory(IEnumerable<Assembly> sources, string configurationFile = null)
         {
-            if (Factory != null) return;
+            if (Factory != null)
+            {
+                return;
+            }
 
             Log.Info("Building SessionFactory");
             
@@ -44,15 +77,23 @@ namespace SHHH.Infrastructure.NHibernate
             }
         }
 
-        private static ISessionFactory Factory { get; set; }
-
+        /// <summary>
+        /// Gets the session.
+        /// </summary>
+        /// <returns>An <see cref="NHibernate.ISession"/></returns>
+        /// <exception cref="System.InvalidOperationException">NHibernate SessionFactory cannot be null</exception>
         public static ISession GetSession()
         {
-            if (Factory == null) throw new InvalidOperationException("NHibernate SessionFactory cannot be null");
+            if (Factory == null)
+            {
+                throw new InvalidOperationException("NHibernate SessionFactory cannot be null");
+            }
 
             ISession session;
             if (CurrentSessionContext.HasBind(Factory))
-             session = Factory.GetCurrentSession();
+            {
+                session = Factory.GetCurrentSession();
+            }
             else
             {
                 session = Factory.OpenSession();
@@ -62,6 +103,9 @@ namespace SHHH.Infrastructure.NHibernate
             return session;
         }
 
+        /// <summary>
+        /// Ends the context session.
+        /// </summary>
         public static void EndContextSession()
         {
             var session = CurrentSessionContext.Unbind(Factory);
@@ -81,6 +125,16 @@ namespace SHHH.Infrastructure.NHibernate
                     session.Dispose();
                 }
             }
+        }
+
+        /// <summary>
+        /// Creates the configuration file.
+        /// </summary>
+        /// <returns>The default path to the configuration file</returns>
+        private static string CreateConfigurationFile()
+        {
+            string configFile = typeof(SessionSource).Assembly.GetName().Name + ".cfg.xml";
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configFile);
         }
     }
 }
