@@ -48,7 +48,7 @@ namespace SHHH.Infrastructure.NHibernate
         /// <summary>
         /// Builds the session factory.
         /// </summary>
-        /// <param name="sources">The sources.</param>
+        /// <param name="sources">The <see cref="IEnumerable{T}"/> of <see cref="System.Reflection.Assembly"/> sources.</param>
         /// <param name="configurationFile">The configuration file.</param>
         public static void BuildSessionFactory(IEnumerable<Assembly> sources, string configurationFile = null)
         {
@@ -80,7 +80,7 @@ namespace SHHH.Infrastructure.NHibernate
         /// <summary>
         /// Gets the session.
         /// </summary>
-        /// <returns>An <c>NHibernate.ISession</c></returns>
+        /// <returns>An <see cref="global::NHibernate.ISession"/></returns>
         /// <exception cref="System.InvalidOperationException">NHibernate SessionFactory cannot be null</exception>
         public static ISession GetSession()
         {

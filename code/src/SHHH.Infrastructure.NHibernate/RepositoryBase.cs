@@ -20,7 +20,7 @@ namespace SHHH.Infrastructure.NHibernate
         private ILog logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
-        /// Runs the in transaction.
+        /// Runs an NHibernate query in a transaction.
         /// </summary>
         /// <param name="f">The f.</param>
         /// <param name="isolationLevel">The isolation level.</param>
@@ -52,7 +52,7 @@ namespace SHHH.Infrastructure.NHibernate
         }
 
         /// <summary>
-        /// Runs the in transaction.
+        /// Runs an NHibernate query in a transaction.
         /// </summary>
         /// <typeparam name="TOut">The type of the out.</typeparam>
         /// <param name="f">The f.</param>

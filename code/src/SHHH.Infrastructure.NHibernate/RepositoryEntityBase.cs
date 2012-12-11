@@ -11,11 +11,11 @@ namespace SHHH.Infrastructure.NHibernate
     /// The base class for Entity based repositories
     /// </summary>
     /// <typeparam name="T">The <see cref="Entity{TId}"/></typeparam>
-    /// <typeparam name="TId">The type of the id.</typeparam>
+    /// <typeparam name="TId">The type of the id if the <see cref="Entity{TID}" />.</typeparam>
     public class RepositoryEntityBase<T, TId> : RepositoryBase where T : Entity<TId>
     {
         /// <summary>
-        /// Loads the specified id.
+        /// Loads the specified <see cref="Entity{TId}"/> by id.
         /// </summary>
         /// <param name="id">The id.</param>
         /// <param name="isolationLevel">The isolation level.</param>
