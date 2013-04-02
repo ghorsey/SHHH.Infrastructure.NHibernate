@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="BuildSessionFactory method" Url="html/86f39312-2690-01c9-7128-23f4d0f2e0c6.htm" />
+  <HelpKINode Title="Configuration property" Url="html/7eb86d2b-0749-be00-79a5-62325c382c0a.htm" />
+  <HelpKINode Title="DeleteEntity method" Url="html/31b18bec-d8a3-b604-81b1-e67d1181e033.htm" />
+  <HelpKINode Title="DeleteEventListener class" Url="html/74aafa8d-31ac-8e40-58ab-f20193136221.htm" />
+  <HelpKINode Title="DeleteEventListener class" Url="html/c94c5c11-9fb2-14b0-2da9-4ccd939a7923.htm" />
+  <HelpKINode Title="DeleteEventListener class">
+    <HelpKINode Title="about DeleteEventListener class" Url="html/74aafa8d-31ac-8e40-58ab-f20193136221.htm" />
+    <HelpKINode Title="all members" Url="html/c94c5c11-9fb2-14b0-2da9-4ccd939a7923.htm" />
+    <HelpKINode Title="constructor" Url="html/1976c68d-6d19-7618-a296-a51cd1f04c71.htm" />
+    <HelpKINode Title="methods" Url="html/604e7c42-3dc6-d2db-72ca-be0387758e25.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteEventListener.DeleteEntity method" Url="html/31b18bec-d8a3-b604-81b1-e67d1181e033.htm" />
+  <HelpKINode Title="DeleteEventListener.DeleteEventListener constructor" Url="html/1976c68d-6d19-7618-a296-a51cd1f04c71.htm" />
+  <HelpKINode Title="EndContextSession method" Url="html/a3766ad0-f861-a1ab-28fc-2f5c036c55fe.htm" />
+  <HelpKINode Title="GetMap method" Url="html/62a85be6-11bb-e63d-4a6f-5d5de2759d56.htm" />
+  <HelpKINode Title="GetSession method" Url="html/14a23248-fdf7-4744-a22c-61ee2c05dd88.htm" />
+  <HelpKINode Title="HybridWebSessionContext class" Url="html/36529414-4de0-d2f9-8192-18872a19909d.htm" />
+  <HelpKINode Title="HybridWebSessionContext class" Url="html/d733bfbe-8eae-f17a-88e2-15452c12190c.htm" />
+  <HelpKINode Title="HybridWebSessionContext class">
+    <HelpKINode Title="about HybridWebSessionContext class" Url="html/36529414-4de0-d2f9-8192-18872a19909d.htm" />
+    <HelpKINode Title="all members" Url="html/d733bfbe-8eae-f17a-88e2-15452c12190c.htm" />
+    <HelpKINode Title="constructor" Url="html/8d3ce113-8c75-55fb-adb6-e34057e58fc4.htm" />
+    <HelpKINode Title="methods" Url="html/873ec807-d8c0-8b32-4f46-b0bf0eea1860.htm" />
+    <HelpKINode Title="properties" Url="html/ed9b120a-d4a1-aa92-dbfa-02077f96cd03.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HybridWebSessionContext.GetMap method" Url="html/62a85be6-11bb-e63d-4a6f-5d5de2759d56.htm" />
+  <HelpKINode Title="HybridWebSessionContext.HybridWebSessionContext constructor" Url="html/8d3ce113-8c75-55fb-adb6-e34057e58fc4.htm" />
+  <HelpKINode Title="HybridWebSessionContext.Session property" Url="html/5794f284-4266-c41a-6105-451fbae58b46.htm" />
+  <HelpKINode Title="HybridWebSessionContext.SetMap method" Url="html/5a3eb3fc-db81-a287-aa62-e5194e628970.htm" />
+  <HelpKINode Title="Load method" Url="html/50eadc7b-7c4c-9cce-cc02-c72648ac0abf.htm" />
+  <HelpKINode Title="NHibernateSessionAttribute class" Url="html/09cb48f5-2c14-6eb2-7d7f-1adbbed33a8f.htm" />
+  <HelpKINode Title="NHibernateSessionAttribute class" Url="html/c968d801-24c3-2734-d65c-ebbbbfb9f093.htm" />
+  <HelpKINode Title="NHibernateSessionAttribute class">
+    <HelpKINode Title="about NHibernateSessionAttribute class" Url="html/c968d801-24c3-2734-d65c-ebbbbfb9f093.htm" />
+    <HelpKINode Title="all members" Url="html/09cb48f5-2c14-6eb2-7d7f-1adbbed33a8f.htm" />
+    <HelpKINode Title="constructor" Url="html/798806c4-59de-e1b1-99e0-4c33913de42c.htm" />
+    <HelpKINode Title="methods" Url="html/73cd8518-ccc4-9c81-3a57-5c3edc964d20.htm" />
+    <HelpKINode Title="properties" Url="html/fd5fe54a-4987-afe1-dcfa-415e58d0853f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NHibernateSessionAttribute.NHibernateSessionAttribute constructor" Url="html/798806c4-59de-e1b1-99e0-4c33913de42c.htm" />
+  <HelpKINode Title="NHibernateSessionAttribute.OnResultExecuted method" Url="html/9fbd9570-03f8-e29b-eea7-9a693114c25f.htm" />
+  <HelpKINode Title="OnResultExecuted method" Url="html/9fbd9570-03f8-e29b-eea7-9a693114c25f.htm" />
+  <HelpKINode Title="RepositoryBase class" Url="html/4a7058f4-1849-b9d0-599e-b949d2b3c389.htm" />
+  <HelpKINode Title="RepositoryBase class" Url="html/b80260f0-82fc-cffe-bef4-99a0639d701e.htm" />
+  <HelpKINode Title="RepositoryBase class">
+    <HelpKINode Title="about RepositoryBase class" Url="html/b80260f0-82fc-cffe-bef4-99a0639d701e.htm" />
+    <HelpKINode Title="all members" Url="html/4a7058f4-1849-b9d0-599e-b949d2b3c389.htm" />
+    <HelpKINode Title="constructor" Url="html/0bbbf105-fd88-39e5-82c5-a1f2ac2d12b1.htm" />
+    <HelpKINode Title="methods" Url="html/5b1293d9-f728-298f-9406-928deaeb177e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RepositoryBase.RepositoryBase constructor" Url="html/0bbbf105-fd88-39e5-82c5-a1f2ac2d12b1.htm" />
+  <HelpKINode Title="RepositoryBase.RunInTransaction method" Url="html/da3de5c1-0d10-99bb-5e47-b620b9ce8178.htm" />
+  <HelpKINode Title="RepositoryEntityBase(Of T, TId) class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm" />
+  <HelpKINode Title="RepositoryEntityBase(Of T, TId) class" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+  <HelpKINode Title="RepositoryEntityBase(Of T, TId) class">
+    <HelpKINode Title="about RepositoryEntityBase(Of T, TId) class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm" />
+    <HelpKINode Title="all members" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+    <HelpKINode Title="constructor" Url="html/08c81919-b6c0-4ea3-9c7d-f71eecd97e1e.htm" />
+    <HelpKINode Title="methods" Url="html/238f9858-9968-9583-9557-6060d56d45b1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RepositoryEntityBase(Of T, TId).Load method" Url="html/50eadc7b-7c4c-9cce-cc02-c72648ac0abf.htm" />
+  <HelpKINode Title="RepositoryEntityBase(Of T, TId).RepositoryEntityBase constructor" Url="html/08c81919-b6c0-4ea3-9c7d-f71eecd97e1e.htm" />
+  <HelpKINode Title="RepositoryEntityBase&lt;T, TId&gt; class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm" />
+  <HelpKINode Title="RepositoryEntityBase&lt;T, TId&gt; class" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+  <HelpKINode Title="RepositoryEntityBase&lt;T, TId&gt; class">
+    <HelpKINode Title="about RepositoryEntityBase&lt;T, TId&gt; class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm" />
+    <HelpKINode Title="all members" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+    <HelpKINode Title="constructor" Url="html/08c81919-b6c0-4ea3-9c7d-f71eecd97e1e.htm" />
+    <HelpKINode Title="methods" Url="html/238f9858-9968-9583-9557-6060d56d45b1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RepositoryEntityBase&lt;T, TId&gt;.Load method" Url="html/50eadc7b-7c4c-9cce-cc02-c72648ac0abf.htm" />
+  <HelpKINode Title="RepositoryEntityBase&lt;T, TId&gt;.RepositoryEntityBase constructor" Url="html/08c81919-b6c0-4ea3-9c7d-f71eecd97e1e.htm" />
+  <HelpKINode Title="RunInTransaction method" Url="html/da3de5c1-0d10-99bb-5e47-b620b9ce8178.htm" />
+  <HelpKINode Title="Session property" Url="html/5794f284-4266-c41a-6105-451fbae58b46.htm" />
+  <HelpKINode Title="SessionSource class" Url="html/63eca779-217e-fb24-2a56-ff23d2cdf877.htm" />
+  <HelpKINode Title="SessionSource class" Url="html/cc268288-4274-cab9-bf6d-cd1d8bf7d29f.htm" />
+  <HelpKINode Title="SessionSource class">
+    <HelpKINode Title="about SessionSource class" Url="html/cc268288-4274-cab9-bf6d-cd1d8bf7d29f.htm" />
+    <HelpKINode Title="all members" Url="html/63eca779-217e-fb24-2a56-ff23d2cdf877.htm" />
+    <HelpKINode Title="methods" Url="html/0154bc35-f743-3029-0003-aa3d4cb2f656.htm" />
+    <HelpKINode Title="properties" Url="html/82f1b46f-6db3-baf0-0bf9-f652bd45ae03.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SessionSource.BuildSessionFactory method" Url="html/86f39312-2690-01c9-7128-23f4d0f2e0c6.htm" />
+  <HelpKINode Title="SessionSource.Configuration property" Url="html/7eb86d2b-0749-be00-79a5-62325c382c0a.htm" />
+  <HelpKINode Title="SessionSource.EndContextSession method" Url="html/a3766ad0-f861-a1ab-28fc-2f5c036c55fe.htm" />
+  <HelpKINode Title="SessionSource.GetSession method" Url="html/14a23248-fdf7-4744-a22c-61ee2c05dd88.htm" />
+  <HelpKINode Title="SetMap method" Url="html/5a3eb3fc-db81-a287-aa62-e5194e628970.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate namespace" Url="html/b06b06a2-9f4c-82c3-bc55-f277b9a38454.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.DeleteEventListener class" Url="html/74aafa8d-31ac-8e40-58ab-f20193136221.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.DeleteEventListener class" Url="html/c94c5c11-9fb2-14b0-2da9-4ccd939a7923.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.RepositoryBase class" Url="html/4a7058f4-1849-b9d0-599e-b949d2b3c389.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.RepositoryBase class" Url="html/b80260f0-82fc-cffe-bef4-99a0639d701e.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.RepositoryEntityBase(Of T, TId) class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.RepositoryEntityBase(Of T, TId) class" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.RepositoryEntityBase&lt;T, TId&gt; class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.RepositoryEntityBase&lt;T, TId&gt; class" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.SessionSource class" Url="html/63eca779-217e-fb24-2a56-ff23d2cdf877.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.SessionSource class" Url="html/cc268288-4274-cab9-bf6d-cd1d8bf7d29f.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.Web namespace" Url="html/693dc664-b90e-1f37-c041-5dedc016b3fd.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext class" Url="html/36529414-4de0-d2f9-8192-18872a19909d.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.Web.HybridWebSessionContext class" Url="html/d733bfbe-8eae-f17a-88e2-15452c12190c.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.Web.NHibernateSessionAttribute class" Url="html/09cb48f5-2c14-6eb2-7d7f-1adbbed33a8f.htm" />
+  <HelpKINode Title="SHHH.Infrastructure.NHibernate.Web.NHibernateSessionAttribute class" Url="html/c968d801-24c3-2734-d65c-ebbbbfb9f093.htm" />
+</HelpKI>

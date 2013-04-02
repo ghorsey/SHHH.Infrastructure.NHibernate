@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="37e27c9c-2a4c-4e89-b88c-8861e0b6a1c3" Title="SHHH.Infrastructure.NHibernate Namespace" Url="html/b06b06a2-9f4c-82c3-bc55-f277b9a38454.htm">
+    <HelpTOCNode Id="535b3dc8-97e8-4a85-9583-d51a9b649f42" Title="DeleteEventListener Class" Url="html/74aafa8d-31ac-8e40-58ab-f20193136221.htm">
+      <HelpTOCNode Title="DeleteEventListener Members" Url="html/c94c5c11-9fb2-14b0-2da9-4ccd939a7923.htm" />
+      <HelpTOCNode Title="DeleteEventListener Constructor " Url="html/1976c68d-6d19-7618-a296-a51cd1f04c71.htm" />
+      <HelpTOCNode Id="55e9faa8-7988-45af-ba13-c50811c71665" Title="DeleteEventListener Methods" Url="html/604e7c42-3dc6-d2db-72ca-be0387758e25.htm">
+        <HelpTOCNode Title="DeleteEntity Method " Url="html/31b18bec-d8a3-b604-81b1-e67d1181e033.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1d891657-a940-4d3d-9961-e5ebfe4293fc" Title="RepositoryBase Class" Url="html/b80260f0-82fc-cffe-bef4-99a0639d701e.htm">
+      <HelpTOCNode Title="RepositoryBase Members" Url="html/4a7058f4-1849-b9d0-599e-b949d2b3c389.htm" />
+      <HelpTOCNode Title="RepositoryBase Constructor " Url="html/0bbbf105-fd88-39e5-82c5-a1f2ac2d12b1.htm" />
+      <HelpTOCNode Id="9607374f-4ac7-4f6c-923d-b9acae214559" Title="RepositoryBase Methods" Url="html/5b1293d9-f728-298f-9406-928deaeb177e.htm">
+        <HelpTOCNode Id="a3564323-a1bd-4ebc-b696-f5a61005bbea" Title="RunInTransaction Method " Url="html/da3de5c1-0d10-99bb-5e47-b620b9ce8178.htm">
+          <HelpTOCNode Title="RunInTransaction Method (Action(), IsolationLevel)" Url="html/45a2a97f-9008-3b0e-3f88-974d5b019f35.htm" />
+          <HelpTOCNode Title="RunInTransaction(TOut) Method (Func(, TOut), IsolationLevel)" Url="html/394d06e7-ccc0-c974-cb98-437ddae45ed9.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26eb4f71-1d2c-4143-b95e-36c6f5db8a37" Title="RepositoryEntityBase(T, TId) Class" Url="html/84ccdbae-d9ce-3832-2744-9c1756c47aa8.htm">
+      <HelpTOCNode Title="RepositoryEntityBase(T, TId) Members" Url="html/adf55a67-751b-4abe-ead2-7ee0169f0088.htm" />
+      <HelpTOCNode Title="RepositoryEntityBase(T, TId) Constructor " Url="html/08c81919-b6c0-4ea3-9c7d-f71eecd97e1e.htm" />
+      <HelpTOCNode Id="3899e8a8-2e17-4661-bf01-c87572b914ec" Title="RepositoryEntityBase(T, TId) Methods" Url="html/238f9858-9968-9583-9557-6060d56d45b1.htm">
+        <HelpTOCNode Title="Load Method " Url="html/50eadc7b-7c4c-9cce-cc02-c72648ac0abf.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="948b7cb8-8734-4d0f-acdb-c3249bc2072f" Title="SessionSource Class" Url="html/cc268288-4274-cab9-bf6d-cd1d8bf7d29f.htm">
+      <HelpTOCNode Title="SessionSource Members" Url="html/63eca779-217e-fb24-2a56-ff23d2cdf877.htm" />
+      <HelpTOCNode Id="bb98e4cb-e844-4072-8e33-dab411f700db" Title="SessionSource Methods" Url="html/0154bc35-f743-3029-0003-aa3d4cb2f656.htm">
+        <HelpTOCNode Title="BuildSessionFactory Method " Url="html/86f39312-2690-01c9-7128-23f4d0f2e0c6.htm" />
+        <HelpTOCNode Title="EndContextSession Method " Url="html/a3766ad0-f861-a1ab-28fc-2f5c036c55fe.htm" />
+        <HelpTOCNode Title="GetSession Method " Url="html/14a23248-fdf7-4744-a22c-61ee2c05dd88.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8440ce4e-5fd3-458a-b068-b74f4e55edc8" Title="SessionSource Properties" Url="html/82f1b46f-6db3-baf0-0bf9-f652bd45ae03.htm">
+        <HelpTOCNode Title="Configuration Property " Url="html/7eb86d2b-0749-be00-79a5-62325c382c0a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="255e7f06-f961-4b54-a45e-ea99e7e3874b" Title="SHHH.Infrastructure.NHibernate.Web Namespace" Url="html/693dc664-b90e-1f37-c041-5dedc016b3fd.htm">
+    <HelpTOCNode Id="b2421319-892f-4403-b303-06f9b075749d" Title="HybridWebSessionContext Class" Url="html/36529414-4de0-d2f9-8192-18872a19909d.htm">
+      <HelpTOCNode Title="HybridWebSessionContext Members" Url="html/d733bfbe-8eae-f17a-88e2-15452c12190c.htm" />
+      <HelpTOCNode Title="HybridWebSessionContext Constructor " Url="html/8d3ce113-8c75-55fb-adb6-e34057e58fc4.htm" />
+      <HelpTOCNode Id="be2ad755-9d6b-4220-8fdd-931230ebae3e" Title="HybridWebSessionContext Methods" Url="html/873ec807-d8c0-8b32-4f46-b0bf0eea1860.htm">
+        <HelpTOCNode Title="GetMap Method " Url="html/62a85be6-11bb-e63d-4a6f-5d5de2759d56.htm" />
+        <HelpTOCNode Title="SetMap Method " Url="html/5a3eb3fc-db81-a287-aa62-e5194e628970.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bdb25752-ae4d-40c1-9a53-082d55387b26" Title="HybridWebSessionContext Properties" Url="html/ed9b120a-d4a1-aa92-dbfa-02077f96cd03.htm">
+        <HelpTOCNode Title="Session Property " Url="html/5794f284-4266-c41a-6105-451fbae58b46.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ad19a2b1-ceba-42d9-abe1-6349386d7eda" Title="NHibernateSessionAttribute Class" Url="html/c968d801-24c3-2734-d65c-ebbbbfb9f093.htm">
+      <HelpTOCNode Title="NHibernateSessionAttribute Members" Url="html/09cb48f5-2c14-6eb2-7d7f-1adbbed33a8f.htm" />
+      <HelpTOCNode Title="NHibernateSessionAttribute Constructor " Url="html/798806c4-59de-e1b1-99e0-4c33913de42c.htm" />
+      <HelpTOCNode Id="2d769b2f-0565-4cd4-baea-657f0e82e9c2" Title="NHibernateSessionAttribute Methods" Url="html/73cd8518-ccc4-9c81-3a57-5c3edc964d20.htm">
+        <HelpTOCNode Title="OnResultExecuted Method " Url="html/9fbd9570-03f8-e29b-eea7-9a693114c25f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="NHibernateSessionAttribute Properties" Url="html/fd5fe54a-4987-afe1-dcfa-415e58d0853f.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
