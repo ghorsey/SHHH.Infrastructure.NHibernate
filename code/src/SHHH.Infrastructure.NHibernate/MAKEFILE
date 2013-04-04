@@ -1,0 +1,9 @@
+NuGet = ..\.nuget\NuGet.exe
+SPEC:
+	 $(NuGet) spec SHHH.Infrastructure.NHibernate.csproj
+
+PACK: SPEC
+	$(NuGet) pack SHHH.Infrastructure.NHibernate.csproj -Prop Configuration=Release
+
+PUSH: PACK
+	$(NuGet) push SHHH.Infrastructure.NHibernate.*.nupkg

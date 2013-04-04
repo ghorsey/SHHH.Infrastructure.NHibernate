@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/ghorsey/SHHH.Infrastructure.NHibernate</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>NHibernate Web SHHH</tags>
+    <dependencies>
+        <dependency id="Common.Logging" version="2.1.2" />
+        <dependency id="NHibernate" version="3.3.3.4000" />
+        <dependency id="SHHH.Infrastructure.NHibernate" version="2.2.2.3" />
+    </dependencies>
+  </metadata>
+</package>

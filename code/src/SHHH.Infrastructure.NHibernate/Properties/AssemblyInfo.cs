@@ -10,19 +10,14 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SHHH.Infrastructure.NHibernate")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Provides basic support to ease communicating with NHibernate backed repositories")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
 [assembly: AssemblyProduct("SHHH.Infrastructure.NHibernate")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
-[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
-
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("80543db5-7278-4d37-bda4-2e40f5cd909b")]
 
-[assembly: AssemblyVersion("2.2.2.3")]
-[assembly: AssemblyFileVersion("2.2.2.3")]
+
