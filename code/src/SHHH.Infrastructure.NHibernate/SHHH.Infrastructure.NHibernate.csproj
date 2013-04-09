@@ -58,9 +58,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NHibernate.3.3.3.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
-    <Reference Include="SHHH.Infrastructure, Version=2.2.2.4, Culture=neutral, PublicKeyToken=d777f4fa70a2390c, processorArchitecture=MSIL">
+    <Reference Include="SHHH.Infrastructure, Version=2.2.2.5, Culture=neutral, PublicKeyToken=d777f4fa70a2390c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\SHHH.Infrastructure.2.2.2.4\lib\net45\SHHH.Infrastructure.dll</HintPath>
+      <HintPath>..\packages\SHHH.Infrastructure.2.2.2.5\lib\net45\SHHH.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
